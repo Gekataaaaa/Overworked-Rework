@@ -24,7 +24,7 @@ namespace Overworked.EditorTools
         {
             var scene = EditorSceneManager.GetActiveScene();
             var corridor = GameObject.Find("Environment/Corridor");
-            var player = Object.FindFirstObjectByType<PlayerController>(FindObjectsInactive.Include);
+            var player = Object.FindAnyObjectByType<PlayerController>(FindObjectsInactive.Include);
             if (corridor == null || player == null)
             {
                 Debug.LogWarning($"[Locker] {scene.name}: нет Environment/Corridor или Player");

@@ -224,9 +224,9 @@ namespace Overworked
         public static bool StoryBusy()
         {
             if (DialogueManager.Instance != null && DialogueManager.Instance.IsPlaying) return true;
-            foreach (var s in UnityEngine.Object.FindObjectsByType<ScriptedSequence>(FindObjectsSortMode.None))
+            foreach (var s in UnityEngine.Object.FindObjectsByType<ScriptedSequence>())
                 if (s.IsPlaying) return true;
-            foreach (var h in UnityEngine.Object.FindObjectsByType<HallucinationEvent>(FindObjectsSortMode.None))
+            foreach (var h in UnityEngine.Object.FindObjectsByType<HallucinationEvent>())
                 if (h.IsPlaying) return true;
             return false;
         }
@@ -489,7 +489,7 @@ namespace Overworked
                 player.RestoreFacing(st.facing);
             }
             if (!string.IsNullOrEmpty(st.room))
-                foreach (var room in UnityEngine.Object.FindObjectsByType<Room>(FindObjectsSortMode.None))
+                foreach (var room in UnityEngine.Object.FindObjectsByType<Room>())
                     if (room.name == st.room) { room.RestoreInside(); break; }
             if (st.sanity >= 0f && SanityManager.Instance != null) SanityManager.Instance.SetSanityInstant(st.sanity);
 
@@ -498,7 +498,7 @@ namespace Overworked
             var brain = Camera.main != null ? Camera.main.GetComponent<CinemachineBrain>() : null;
             var saved = brain != null ? brain.DefaultBlend : default;
             if (brain != null) brain.DefaultBlend = new CinemachineBlendDefinition(CinemachineBlendDefinition.Styles.Cut, 0f);
-            foreach (var cam in UnityEngine.Object.FindObjectsByType<CinemachineVirtualCameraBase>(FindObjectsSortMode.None))
+            foreach (var cam in UnityEngine.Object.FindObjectsByType<CinemachineVirtualCameraBase>())
                 cam.PreviousStateIsValid = false;
             yield return null;
             yield return null;

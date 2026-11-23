@@ -68,7 +68,7 @@ namespace Overworked
         {
             if (moving || PlayerController.Instance == null) return;
             // Поиск по сцене — только здесь, по нажатию отладочной клавиши, в игровой код это не идёт.
-            var rooms = FindObjectsByType<Room>(FindObjectsInactive.Include, FindObjectsSortMode.None)
+            var rooms = FindObjectsByType<Room>(FindObjectsInactive.Include)
                 .Where(r => r.EntryPoint != null && r.RoomCamera != null).OrderBy(r => r.name).ToArray();
             if (rooms.Length == 0)
             {

@@ -58,7 +58,7 @@ namespace Overworked.EditorTools
             // Триггер шире кружки и вниз до пола под Дэнни: InteractionSystem ищет объекты в радиусе от его ног.
             var col = go.AddComponent<BoxCollider2D>();
             col.isTrigger = true;
-            var player = Object.FindFirstObjectByType<PlayerController>(FindObjectsInactive.Include);
+            var player = Object.FindAnyObjectByType<PlayerController>(FindObjectsInactive.Include);
             float bottom = player != null ? Mathf.Min(player.transform.position.y, b.min.y) - 0.3f : b.min.y - 1f;
             float top = go.transform.position.y + h / 2f + 0.1f;
             col.size = new Vector2(1f, top - bottom);
