@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40eb37ca356639c4bb63bc685923c692, type: 3}
+  m_Name: F3_Max_01
+  m_EditorClassIdentifier: Overworked::Overworked.MessageData
+  Sender: 0
+  Lines:
+  - 'Helloooo, Danny.'
+  - 'You there?'
+  - 'How long are you gonna keep working?'
+  - 'Since you''re still in the office, grab my pass from the kitchen.'
+  - 'Think I left it by the coffee machine.'
+  Floor: 3
+  LinkedObjective: {fileID: 11400000, guid: d89508ebc79f4799bb54fd297a59020b, type: 2}

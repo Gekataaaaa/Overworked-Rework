@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40eb37ca356639c4bb63bc685923c692, type: 3}
+  m_Name: F2_Max_01
+  m_EditorClassIdentifier: Overworked::Overworked.MessageData
+  Sender: 0
+  Lines:
+  - Danny, wait.
+  - You went down to the second, right?
+  - The exit downstairs is locked.
+  - The system won't close the shift without an archive check.
+  - The documents are in room 201.
+  - Please check them. I can't get in there.
+  Floor: 2
+  LinkedObjective: {fileID: 11400000, guid: 7122c7f7bbb141dbab3c3e3a3ea25a8a, type: 2}

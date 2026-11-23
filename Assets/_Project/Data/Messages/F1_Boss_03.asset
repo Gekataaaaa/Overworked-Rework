@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40eb37ca356639c4bb63bc685923c692, type: 3}
+  m_Name: F1_Boss_03
+  m_EditorClassIdentifier: Overworked::Overworked.MessageData
+  Sender: 1
+  Lines:
+  - 'Sit down, Danny.'
+  - 'You''ve worked hard today.'
+  - 'A few minutes of rest won''t hurt.'
+  - 'The machine is already on. You can play one round.'
+  Floor: 1
+  LinkedObjective: {fileID: 0}
